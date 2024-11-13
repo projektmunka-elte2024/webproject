@@ -1,15 +1,12 @@
 <?php
-// Adatbázis kapcsolat konfiguráció
-$host = 'localhost';       // Az adatbázis szerver címe (pl. localhost)
-$dbname = 'travel_agency'; // Az adatbázis neve
-$username = 'root'; // Az adatbázis felhasználó neve
-$password = ''; // Az adatbázis felhasználó jelszava
 
+$host = 'localhost';       
+$dbname = 'travel_agency'; 
+$username = 'travel_agency'; 
+$password = 'webproject123'; 
 try {
-    // PDO objektum létrehozása
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
-    // Hiba kezelési mód beállítása kivételre
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
    
 } catch (PDOException $e) {
     // Hibakezelés hiba esetén
