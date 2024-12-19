@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .id-display {
+            font-size: 24px;
+            margin-top: 20px;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Destination Details</h1>
+        <div id="details">
+            <p>Az URL-ből kinyert <strong>ID:</strong></p>
+            <div class="id-display" id="apartmentId"></div>
+        </div>
+    </div>
+
+    <script>
+        // Függvény az URL paraméter kinyerésére
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Kinyerjük az 'id' paramétert az URL-ből
+        const apartmentId = getQueryParam('id');
+
+        // Az ID megjelenítése az oldalon
+        const idDisplay = document.getElementById('apartmentId');
+        if (apartmentId) {
+            idDisplay.textContent = apartmentId;
+        } else {
+            idDisplay.textContent = 'Nincs ID az URL-ben.';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Országok listája</title>
+    <script>
+
+        function test(e){
+            console.log(e);
+        }
+
+        async function loadCountries() {
+            try {
+                const response = await fetch('api.php/apartmans');
+                const data = await response.json();
+
+               
+                if (data.error) {
+                    document.getElementById('country-list').innerText = data.error;
+                    return;
+                }
+             
+                const countryList = document.getElementById('country-list');
+                countryList.innerHTML = ''; 
+
+                const apartmanList = document.getElementById('apartman-list');
+                apartmanList.innerHTML = ''; 
+
+
+				data.forEach(apartman => {
+				const apListItem = document.createElement('li');
+				apListItem.textContent = `Apartman neve: ${apartman.name}`;
+				apartmanList.appendChild(apListItem);
+			});
+
+
+
+
+            } catch (error) {
+                document.getElementById('country-list').innerText = 'Hiba történt az adatok lekérésekor.';
+                console.error('Error fetching countries:', error);
+            }
+        }
+
+        window.onload = loadCountries;
+    </script>
+</head>
+<body>
+    <h1>Népszerű apartmanok</h1>
+    <ul id="apartman-list">
+    </ul>
+
+
+
+    <h1>Országok listája</h1>
+    <ul id="country-list">
+    </ul>
+
+</body>
+</html>

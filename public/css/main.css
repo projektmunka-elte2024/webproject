@@ -1,0 +1,1748 @@
+* {
+	outline: none;
+}
+
+body{
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+footer {
+	min-height:100px;
+	font-size: 2rem;
+	text-align: center;
+	align-items: center;
+	padding: 3rem;
+}
+
+footer a {
+	color: #f05247d7;
+	text-decoration: none;
+}
+
+.fbutton {
+	background-color: #00b478;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+	display: inline-block;
+	font-size:1.2rem;
+	align-items:center;
+	height: 3rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+.fbutton:hover {
+	background-color: #039161;
+	transition: 0.5s;
+}
+
+.description {
+	line-height:200%;
+	font-size: 20px;
+	font-family: "Raleway", sans-serif;
+}
+
+.logo {
+	width:100px;
+	height: auto;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.top-header {
+	background: #f08307;
+}
+
+.top-header a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size:1.25rem;
+}
+
+.top-header .container {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.top-header .container .top-header-left svg {
+	margin-right: 0.9rem;
+}
+
+.top-header-left {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.top-header-block {
+	margin-right: 4.5rem;
+}
+
+.top-header-right {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.top-header-right ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.top-header-right li {
+	display: inline-block;
+}
+
+.social-block {
+	margin-right: 8.5rem;
+}
+
+.top-header-right .social-list li {
+	margin-right: 0.625em;
+	margin-left: 0.625em;
+}
+
+.main-header .container {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 1.375em;
+	padding-bottom: 1.375em;
+}
+
+.nav-desktop {
+	display: inline-block;
+}
+
+.nav-desktop li, .nav-desktop li a{
+	font-size: 1.8rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #3a3a3a;
+	text-decoration: none;
+}
+
+.nav-desktop li, .nav-desktop li a:hover {
+	transition: 0.5s;
+	color: #f05247d7;
+}
+
+.nav-desktop li {
+	padding: 1.6rem;
+}
+
+.nav-desktop ul ul {
+	position: absolute;
+	display: none;
+	margin: 0;
+}
+
+.menu-list {
+	display: flex;
+}
+
+ul > li {
+	position: relative;
+}
+
+.nav-desktop .sub-menu {
+	top: 100%;
+	left: 0;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.sub-menu li:hover {
+	background: rgba(0,0,0,0.12);
+}
+
+.menu-list > li > .sub-menu::before {
+	position: absolute;
+	content: "";
+	border: 1px solid #1f4271;
+	top: 0;
+	width: 35%;
+	left: 3%;
+	cursor: pointer;
+}
+
+.sub-menu .sub-menu{
+	top: -1px;
+	left: 100%;
+}
+
+.menu-parent:hover > .sub-menu{
+	display: block;
+	z-index: 999;
+	width: 20rem;
+	padding-left: 0;
+	text-align: left;
+}
+
+#bar, #close {
+	display: none;
+}
+
+.menu-parent::after {
+	content: "";
+	border: solid #3a3a3a;
+  	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 3px;
+  	margin-left: 10px;
+  	transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+}
+
+.menu-parent .menu-parent::after {
+	content: "";
+	border: solid #3a3a3a;
+  	border-width: 0 3px 3px 0;
+  	display: inline-block;
+  	padding: 3px;
+  	margin-left: 10px;
+  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+}
+
+.banner {
+	position: relative;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.banner .container {
+    position: absolute; /* Ensure the container is positioned relative to the banner */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the center alignment */
+    text-align: center; /* Center the text horizontally */
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    z-index: 9;
+}
+
+.banner .container h1 {
+    font-size: 4rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0; /* Remove extra margins */
+    color: white;
+}
+
+.banner .container h3 {
+    font-weight: normal;
+    font-size: 2rem; /* Adjust the font size for the subtitle */
+    color: white;
+    margin-top: 1rem; /* Add some spacing below the h1 */
+}
+
+/*==Banner Owl Carousel===*/
+#owl-four-nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner .owl-nav .owl-prev, .banner .owl-nav .owl-next{
+	/*font-size: 4rem;*/
+	font-weight: bold;
+	background: transparent;
+	border: none;
+	/*color: #fff;*/
+	cursor: pointer;
+}
+
+.banner #owl-four-nav {
+	position: absolute;
+	top: 40%;
+	left: 0;
+	z-index: 9;
+}
+
+
+/*popular courses*/
+.page-heading .container {
+	text-align: center;
+	padding-top: 6.25em;
+	padding-bottom: 4.375em;
+}
+
+.page-heading .container h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size:3rem;
+	font-family: "Raleway", sans-serif;
+}
+
+
+/*======Why Us section==========*/
+
+.whyUs-section {
+	background: #f05247d7;
+	color: #fff;
+}
+
+.whyUs-section .container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.featured-points {
+	width: 40.17%;
+	padding-top: 6.25em;
+}
+
+.featured-points ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.featured-points li {
+	font-size: 1.8rem;
+	font-family: 'Raleway', sans-serif;
+	line-height: 2.222em;
+	text-transform: uppercase;
+	margin-bottom: 2.2223em;
+}
+
+.featured-points li svg {
+	font-size: 2.5rem;
+	margin-right: 1em;
+	display: inline-block;
+}
+
+.whyus-wrap {
+	width: 57.265%;
+	padding-top: 4.375em;
+	padding-bottom: 4.375em;
+}
+
+.whyus-wrap h1 {
+	font-size: 3rem;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 1.33334em;
+}
+
+.whyus-wrap h1::after {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	width: 9%;
+	left: 0;
+	height: 3px;
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+.whyus-wrap p {
+	font-size: 1.6rem;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 2.8125em;
+}
+
+.read-more-btn {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+	padding: 0.7em 1.6667em 0.94em 1.6667em;
+	border: 1px solid #fff;
+}
+
+.read-more-btn:hover {
+	color:#222222;
+	border-color: #222222;
+	transition:0.5s;
+}
+
+/*=========Popular courses  && Course Listing Page Css======*/
+/*==========================
+	Course listing Page
+===========================*/
+.course-listing-page .container, .gallery-section .container {
+	padding-top: 4.0625em;
+	padding-bottom: 6.25em;
+}
+
+.gallery-section2 .container {
+	padding-top: 4.0625em;
+	padding-bottom: 3.75em;
+}
+
+.gallery2 {
+	margin-bottom: 4.0625em;
+}
+/*
+#gGrid{
+	overflow: hidden;
+}*/
+
+.course-listing-page .button-group, 
+.gallery-section .button-group, 
+.gallery-section2 .button-group {
+	text-align: center;
+	margin-bottom: 4.375em;
+	position: relative;
+}
+
+.course-listing-page .button-group::after,
+.gallery-section .button-group::after,
+.gallery-section2 .button-group::after {
+	content: "";
+	position: absolute;
+	border: 0.5px solid #d4d4d4;
+	bottom: 0;
+	width: 530px;
+	left: 27.5%;
+}
+
+.course-listing-page .button-group button,
+.gallery-section .button-group button,
+.gallery-section2 .button-group button{
+	font-size: 1.4rem;
+	font-family: 'Raleway', sans-serif;
+	color: #000;
+	background: transparent;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	position: relative;
+}
+
+.course-listing-page .button-group button:hover::after,
+.gallery-section .button-group button:hover::after,
+.gallery-section2 .button-group button:hover::after{
+	content: "";
+	position: absolute;
+	border: 1px solid #1c3961;
+	bottom: 0;
+	width: 80%;
+	left: 10%;
+	z-index: 999;
+}
+
+
+.recent-course-single .grid {
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+/* clear fix */
+.course-listing-page .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.course-listing-page .grid-item {
+	position: relative;
+	margin-right: 1.7%;
+	margin-bottom: 2em;
+}
+
+.course-listing-page .grid-item, .recent-course-single .grid-item {
+	width: 370px;
+}
+
+.learn-courses .box-wrap {
+	width: 100%;
+}
+
+.learn-courses .box-wrap, .recent-course-single .grid-item{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.learn-courses .box-wrap .img-wrap, 
+.course-listing-page .grid-item .img-wrap, 
+.recent-course-single .grid-item .img-wrap{
+	margin-bottom: -7px;
+}
+
+.learn-courses .learn-desining-banner,
+.course-listing-page .grid-item .learn-desining-banner-course,
+.recent-course-single .grid-item .learn-desining-banner-course {
+	position: absolute;
+	left: 5%;
+	top: 44%;
+	background: #009450;
+	padding: 0.9375em 3.5625em 1em 3.5625em;
+	font-size: 1.8rem;
+	font-family: "Raleway", sans-serif;
+	color: #fff;
+	text-decoration: none;
+}
+
+.course-listing-page .grid-item .learn-desining-banner-course, 
+.recent-course-single .grid-item .learn-desining-banner-course{
+	background: #1c3961;
+}
+
+.learn-courses .box-wrap .box-body, 
+.course-listing-page .grid-item .box-body,
+.recent-course-single .grid-item .box-body{
+	border: 1px solid #b7b7b7;
+	padding: 1.25em;
+	padding-top: 2.8125em;
+}
+
+.learn-courses .box-body p, 
+.course-listing-page .grid-item .box-body p,
+.recent-course-single .grid-item .box-body p {
+	font-size: 1.4rem;
+	font-family: 'Raleway', sans-serif;
+	color: #5c5c5c;
+}
+
+.learn-courses .box-body > p, 
+.course-listing-page .grid-item .box-body > p,
+.recent-course-single .grid-item .box-body > p {
+	margin-top: 1.428em;
+	margin-bottom: 2.1428em;
+}
+
+.learn-courses .box-body section p {
+	font-family: 'Raleway', sans-serif;
+}
+
+.learn-courses .box-body p span , 
+.course-listing-page .grid-item .box-body p span,
+.recent-course-single .grid-item .box-body p span{
+	color: #060e1a;
+}
+/*=======Owl Carlow ==========*/
+
+.learn-courses .owl-carousel .owl-nav, .latest-news .owl-carousel .owl-nav {
+	color:  #636363;
+	text-align: center;
+    margin-top: 2.5em;
+    margin-bottom: 6.25em;
+    position: relative;
+}
+
+.learn-courses .owl-carousel .owl-nav button[class*="owl-"], .latest-news .owl-carousel .owl-nav button[class*="owl-"]{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #636363;
+    border-radius: 100%;
+    margin-right: 40px;
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="%23636363" d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg>');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    text-indent: 50px;
+    overflow: hidden;
+}
+
+.learn-courses .owl-carousel .owl-nav button.owl-next, .latest-news .owl-carousel .owl-nav button.owl-next{
+    margin-right: 0;
+    margin-left: 40px;
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="%23636363" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>');
+}
+
+.learn-courses .owl-carousel .owl-nav::before, .latest-news .owl-carousel .owl-nav::before {
+    content: "";
+    background: #636363;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.learn-courses .owl-carousel .owl-dots, .latest-news .owl-carousel .owl-dots {
+	display: none;
+}
+
+#sync1 {
+  .item {
+    background: #0c83e7;
+    padding: 80px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+
+#sync2 {
+  .item {
+    background: #C9C9C9;
+    padding: 10px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    h1 {
+      font-size: 18px;
+    }
+  }
+
+  .current .item{
+    background: #0c83e7;
+  }
+}
+
+
+
+.what-other-say .owl-theme {
+  .owl-nav {
+    /*default owl-theme theme reset .disabled:hover links */
+    [class*='owl-'] {
+      transition: all .3s ease;
+      &.disabled:hover {
+       background-color: #D6D6D6;
+      }   
+    }
+    
+  }
+}
+
+#sync1.owl-theme {
+  position: relative;
+  .owl-next, .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+  }
+  .what-other-say .owl-prev {
+    left: 10px;
+  }
+  .what-other-say .owl-next {
+    right: 10px;
+  }
+}
+
+
+/*upcoming events*/
+
+.text-overlay {
+    border-radius: 0; /* Négyzetes sarkok */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kis árnyék */
+    z-index: 10; /* Biztosítsa, hogy a szöveg a kép felett legyen */
+}
+.events-section .card {
+    border-radius: 0; /* Négyzetes sarkok */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Kis árnyék */
+}
+
+.events-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*query section*/
+
+.query-section {
+	background: #f3f3f3;
+}
+
+.query-section .container {
+	padding: 2.25em 1em;
+}
+
+
+.query-section .container {
+	padding: 2.25em 1em;
+}
+
+.query-section .container p {
+	font-size: 2.4rem;
+	font-family: 'Raleway', sans-serif;
+	color: #000;
+}
+
+.query-section .container p a {
+	text-decoration: none;
+	color: #1c3961;
+	margin-left: 4.1667em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */ 
+
+
+
+@media screen and (max-width: 1199px) {
+	.container {
+		max-width: 1000px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.banner {
+		position: relative;
+		margin-bottom: -8px;
+	}
+	
+	.banner img {
+		width: 100%;
+	}
+
+	/*=====Popular Courses====*/
+
+	.learn-desining-banner {
+		left: 15%;
+		top: 53% !important;
+		/*background: #009450;*/
+		padding: 0.9375em 2em 1em 2em;
+	}
+
+	/*===========Gallery=========*/
+	.gallery-images-section {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}
+
+	/*====UPcomming Event====*/
+	.event-wrap .details {
+	width: 70%;
+	padding: 1em;
+	top: 3%;
+	}
+
+	/*===What Other Say*/
+	.what-other-say .container {
+	padding: 4.375em 1em;
+	}
+
+	/*=====Lates New Section====*/
+	.news-detail {
+		top: 47%;
+	}
+
+	.latest-news .container .owl-carousel .owl-nav {
+		margin-top: 0;
+	}
+	
+
+	/*==Footer Line Part=====*/
+	.page-footer .footer-second-section .footer-line {
+		width: 38%;
+	}
+
+	.page-footer .footer-second-section .social-list {
+		width: 23%;
+	}
+	/*=====================================
+		Blog Page
+	======================================*/
+	.page-content .container {
+		flex-flow: column wrap;
+	}
+
+	.page-content .container .grid-container{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.page-content .container aside {
+		width: 371px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.page-content .latest-course {
+		margin-bottom: 4em;
+	}
+
+	/*=====================================
+		Blog Edu Single
+	======================================*/
+	.page-content .page-article {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.page-content .comment-form {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/*=====================================
+		About Page
+	======================================*/
+
+	.team-members .developer-grid {
+		grid-template-columns: repeat(3, 1fr);
+		width: 870px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*=====================================
+		Course Listing Page
+	======================================*/
+
+	.course-listing-page .button-group::after, 
+	.gallery-section2 .button-group::after{
+		left: 23%;
+	}
+
+	.course-listing-page .grid {
+		justify-content: space-around;
+	}
+
+	/*=====================================
+		Course Single Page
+	======================================*/
+	#course-page .course-detail, .testimonial-page .customer-review {
+		width: 77%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#course-page .container {
+		padding-bottom: 1.25em;
+	}
+
+	#course-page aside, .testimonial-page aside {
+		margin-top: 4em;
+	}
+
+	.recent-course-single .grid {
+		justify-content: space-around;
+	}
+
+	.testimonial-page aside, .testimonial-page .submit-testimonials {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		max-width: 800px;
+	}
+
+	.top-header .top-header-left {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2em;
+	}
+
+	.top-header .top-header-left .top-header-block:last-child {
+		margin-right: 1em;
+	}
+
+	.top-header .top-header-right {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.top-header-right .social-block {
+		margin-right: 3em;
+	}
+
+
+	/*====navigation=====*/
+	.menu-list {
+		flex-direction: column;
+	}	
+
+	.nav-desktop {
+		display: none;
+		width: 250px;
+	}
+
+	.nav-desktop li, .nav-desktop li a {
+		font-size: 1.4rem;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	.nav-desktop ul ul {
+		position: static;
+	}
+
+	#bar {
+		display: inline-block;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	#close {
+		display: none;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	.menu-list > li > .sub-menu::before {
+		content: "";
+		border: none;
+	}
+
+	.menu-parent .menu-parent::after {
+		content: "";
+		border: solid #3a3a3a;
+	  	border-width: 0 3px 3px 0;
+	  	display: inline-block;
+	  	padding: 3px;
+	  	margin-left: 10px;
+	  	transform: rotate(45deg);
+	  	-webkit-transform: rotate(45deg);
+	}
+
+	.menu-parent:hover::after,
+	.menu-parent .menu-parent:hover::after {
+		content: "";
+		border: none;
+		display: none;
+	}
+
+	/*========Banner section====*/
+	.banner .container h1 {
+		margin-top: 3em;
+	}
+
+	/*=====Popular Courses====*/
+
+	.learn-desining-banner {
+		left: 5%;
+		top: 45% !important;
+		padding: 0.9375em 3.5625em 1em 3.5625em;
+	}
+
+	/*=============Upcomming Event=============*/
+
+	.events-section .container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.event-wrap {
+		margin-left: 10%;
+		margin-bottom: 2em;
+	}
+
+	.event-wrap:last-child {
+		margin-bottom: 0;
+	}
+
+	.event-wrap .img-wrap {
+		width: 420px;
+	}
+
+	.event-wrap .details {
+		width: 271px;
+		left: 80%;
+		top: 8%;
+	}
+
+	/*====What other say=============*/
+	.what-other-say .container .wrap-others-say {
+		width: 600px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	/*=====Lates New Section====*/
+	.news-detail {
+		top: 35%;
+	}
+
+	/*==Footer Line Part=====*/
+	.page-footer .footer-second-section .footer-line {
+		width: 30%;
+	}
+
+	.footer-second-section .footer-line:first-child {
+		margin-left: 0;
+		margin-right: 2em;
+	}
+
+	.footer-second-section .footer-line:last-child {
+		margin-right: 0;
+		margin-left: 2em;
+	}
+
+	.page-footer .footer-second-section .social-list {
+		width: 30%;
+	}
+	/*===================================
+		Blog Page
+	=====================================*/
+
+	.page-content .container .grid-container{
+		grid-gap: 10px;
+	}
+
+	/*=====================================
+		Contact Page
+	======================================*/
+
+	.contact-page-section .people-info-wrap{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.contact-page-section .contact-info {
+		margin-top: 3em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*=====================================
+		About Page
+	======================================*/
+
+	.about-upper-section .who-we-are {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.about-upper-section .our-story {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.team-members .developer-grid {
+		grid-template-columns: repeat(2, 1fr);
+		width: 570px;
+	}
+
+	/*=====================================
+		Course Listing Page
+	======================================*/
+
+	.course-listing-page .button-group::after,
+	.gallery-section2 .button-group::after{
+		left: 16%;
+	}
+
+	.course-listing-page .grid {
+		justify-content: space-between;
+	}
+
+	/*=====================================
+		Course Single Page
+	======================================*/
+
+	#course-page .course-detail .course-box {
+		margin-bottom: 2em;
+	}
+
+	#course-page .course-intro {
+		padding-top: 3em;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 450px;
+    }
+
+    .site-header .top-header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align elements to the left */
+        gap: 0.5em; /* Adjust spacing between elements */
+        font-size: 20px;
+    }
+
+    .top-header .container {
+        display: flex;
+        flex-wrap: wrap; /* Sorokba törhetnek az elemek */
+        justify-content: space-between; /* Egyenletes elosztás a bal és jobb oldalon */
+        align-items: flex-start; /* Az elemek felső szélhez igazodnak */
+        padding: 0.5rem 1rem; /* Kisebb padding a fejléchez */
+    }
+
+	.top-header-left,
+    .top-header-right {
+        display: flex;
+        flex-direction: column; /* Az elemek egymás alá kerülnek */
+        align-items: flex-start; /* Biztosítja, hogy balra igazodjanak */
+        gap: 0.5rem; /* Kis távolság az elemek között */
+        width: 100%; /* Teljes szélesség */
+    }
+
+    .top-header-left .top-header-block,
+    .top-header-right .login-block {
+        margin: 0; /* Távolság eltávolítása */
+        text-align: left; /* Balra igazítás */
+    }
+
+    .top-header-right .social-list {
+        display: flex;
+        flex-wrap: wrap; /* Az ikonok több sorba törhetnek */
+        gap: 0.5rem; /* Távolság az ikonok között */
+        justify-content: flex-start; /* Balra igazítja az ikonokat */
+        padding: 0; /* Nincs extra padding */
+        margin: 0;
+    }
+
+    .top-header-right .social-block {
+        display: flex;
+        justify-content: flex-start; /* Balra igazítja az ikonokat */
+        flex-wrap: wrap; /* Soronkénti törés, ha szükséges */
+        gap: 0.5rem; /* Távolság az ikonok között */
+    }
+
+	.top-header-right .social-list li {
+        margin: 0; /* Eltávolítja az extra margót */
+    }
+
+    .login-block {
+        margin-top: 1rem; /* Kis térköz az előző elem után */
+        font-size: 0.9rem; /* Kisebb szövegméret mobilon */
+    }
+
+    .main-header .container {
+        flex-direction: column; /* A logó és a navigáció egymás alá kerül */
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-desktop {
+        display: none; /* Elrejti az asztali navigációt kisebb kijelzőkön */
+    }
+
+    #bar {
+        display: block; /* Mobil menü ikon megjelenítése */
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #close {
+        display: none; /* Mobil menü bezáró ikon rejtve marad */
+    }
+
+    .banner .container {
+        text-align: center; /* Középre igazított szöveg */
+    }
+
+    .banner .container h1 {
+        font-size: 2rem; /* Kisebb szövegméret */
+    }
+
+    .banner .container h3 {
+        font-size: 1.2rem; /* Kisebb szövegméret */
+    }
+}
+	/*====Banner=======================*/
+
+	.banner .container h1 {
+        font-size: 3rem; /* Reduce the font size */
+    }
+
+    .banner .container h3 {
+        font-size: 1.5rem; /* Adjust subtitle size */
+    }
+
+	/*====Popular Courses======*/
+	.learn-desining-banner {
+		top: 50% !important;
+	}
+
+	/*==Why Us Section========*/
+
+	.whyUs-section .container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.whyUs-section .container .featured-points {
+		width: 100%;
+	}
+
+	.whyUs-section .container .whyus-wrap {
+		width: 100%;
+	}
+
+	/*===Upcomming Events====*/
+	.events-section .event-wrap {
+		margin-left: 10px;
+	}
+
+	/*===What other say============*/
+	.what-other-say .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.what-other-say .container .wrap-others-say {
+		margin-right: 0;
+		margin-left: 0;
+		padding-right: 1em;
+		padding-left: 1em;
+		width: 100%;
+	}
+
+	/*===Footer Links Section============*/
+
+	.page-footer .footer-first-section .container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 40px;
+	}
+
+	.page-footer .footer-first-section .container .box-wrap {
+		width: 100%;
+	}
+
+	.footer-first-section .container .box-wrap header h1 {
+		font-size: 2.5em;
+	}
+
+	.footer-first-section .container .box-wrap p,
+	.footer-first-section .container .box-wrap h4,
+	.footer-first-section .container .box-wrap ul li a
+	 {
+		font-size: 1.7em;
+	}
+
+	.footer-first-section .container .box-wrap ul li a {
+		margin-left: 15px;
+	}
+
+	.footer-first-section .container .box-wrap ul li {
+		margin-bottom: 25px;
+	}
+
+	.footer-first-section .recent-course-wrap {
+		justify-content: unset;
+	}
+
+	.footer-first-section .recent-course-wrap .course-name {
+		margin-left: 15px;
+	}
+
+	.footer-first-section .container .box-wrap .quick-contact textarea {
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+	/*==Footer Line Part=====*/
+	.page-footer .footer-second-section .footer-line {
+		display: none;
+	}
+
+	.page-footer .footer-second-section .social-list {
+		width: 100%;
+	}
+
+	.page-footer .footer-second-section .social-list li {
+		margin-right: 11%;
+	}
+
+	.page-footer .footer-second-section .social-list li a svg {
+		font-size: 30px;
+	}
+
+	.page-footer .footer-last-section {
+		margin-top: 20px;
+	}
+
+	/*===================================
+		Blog Page
+	=====================================*/
+
+	.page-content .container .grid-container{
+		grid-template-columns: repeat(1,1fr);
+		grid-gap: 30px;
+	}
+
+	/*=====================================
+		Contact Page
+	======================================*/
+
+	.contact-page-section .people-info-wrap form span{
+		flex-flow: column wrap;
+	}
+
+	.contact-page-section .people-info-wrap form span .name,
+	 .contact-page-section .people-info-wrap form span .email {
+	 	width: 100%;
+	 }
+
+	.contact-page-section .people-info-wrap form span .name {
+		margin-bottom: 0.9375em;
+	}
+
+	/*=====================================
+		About Page
+	======================================*/
+	.team-members .developer-grid {
+		grid-template-columns: repeat(1, 1fr);
+		width: 270px;
+	}
+
+	/*=====================================
+		Course Listing Page
+	======================================*/
+
+	.course-listing-page .button-group::after,
+	.gallery-section2 .button-group::after{
+		width: 370px;
+		left: 5%;
+	}
+
+	.course-listing-page .grid {
+		justify-content: space-between;
+	}
+	/*testimonial*/
+
+	.testimonial-page aside {
+		width: 270px !important;
+	}
+
+
+@media screen and (max-width: 550px) {
+	.container {
+		max-width: 300px;
+	}
+
+	.top-header-right .social-list li {
+		margin-right: 40px;
+	}
+
+	.top-header-right .social-list li:nth-last-child(n+3){
+		margin-bottom: 30px;
+	}
+
+	.top-header-right .social-list li svg {
+		font-size: 25px;
+	}
+
+    .banner .container {
+        position: absolute;
+        top: 50%; /* Függőlegesen középre helyezi a szöveget */
+        left: 50%; /* Vízszintesen középre helyezi a szöveget */
+        transform: translate(-50%, -50%); /* Valódi középre igazítás */
+        text-align: center; /* Középre igazított szöveg */
+        padding: 1rem; /* Szöveg körüli tér biztosítása */
+        background: rgba(0, 0, 0, 0.5); /* Átlátszó háttér a jobb olvashatóság érdekében */
+        border-radius: 8px; /* Lekerekített sarkok */
+        color: #fff; /* Fehér szöveg */
+    }
+
+
+	.banner .container h1 {
+        font-size: 2rem; /* Kisebb szövegméret */
+        line-height: 1.2; /* Jobb olvashatóság */
+        margin: 0 0 0.5rem; /* Tér a címek között */
+    }
+
+    .banner .container h3 {
+        font-size: 1.2rem; /* Kisebb alcím */
+        margin: 0; /* Nincs felesleges tér */
+    }
+	.banner img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+	#owl-four-nav button {
+		padding: 0;
+	}
+
+	/*===Popular Courses==*/
+
+	.learn-courses .learn-desining-banner, 
+	.course-listing-page .grid-item .learn-desining-banner-course, 
+	.recent-course-single .grid-item .learn-desining-banner-course {
+		top: 37% !important;
+		left: 3%;
+		padding: 10px 20px;
+	}
+
+	.events-section .event-wrap,
+	.upcomming .container .event-wrap
+	 {
+		margin-bottom: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.events-section .event-wrap,
+	.events-section .event-wrap .img-wrap 
+	{
+		width: 280px;
+	}
+
+	.events-section .event-wrap .details {
+		left: 2%;
+		top: 80%;
+	}
+
+	/*Query Section*/
+
+	.query-section .container p a {
+		display: block;
+		margin: 0;
+	}
+
+	/*==footere=============*/
+
+	.page-footer .footer-second-section .social-list li {
+		margin-right: 15%;
+	}
+
+	.page-footer .footer-second-section .social-list li:first-child {
+		margin-left: 40px;
+		margin-bottom: 30px;
+	}
+
+	.page-footer .footer-second-section .social-list li:nth-child(4){
+		margin-left: 26%;
+	}
+
+	/*=========================
+		Blog Page
+	===========================*/
+
+	.page-content .container {
+		flex-flow: row wrap;
+	}
+
+	.grid-container .grid-box-wrap {
+		width: 270px;
+	}
+
+	/*=========================
+		Course Listing Page
+	==========================*/
+
+	.course-listing-page .button-group::after, 
+	.gallery-section2 .button-group::after {
+		width: 240px;
+	}
+
+	.course-listing-page .grid-item, 
+	.recent-course-single .grid-item {
+    width: 270px;
+	}
+}
+
+/*@media screen and (max-width: 479px) {
+
+	.mean-container .mean-nav {
+		box-sizing: border-box;
+		width: 50%;
+	}
+
+	.mean-container .mean-nav ul li a.mean-expand {
+		top: 30%;
+	}
+
+	.mean-container .mean-nav ul ,
+	.nav-menu .sub-menu .sub-menu-g{
+		background: #0c1923;
+	}
+
+	.nav-menu li > a {
+		color: #fff;
+	}
+}
+*/
+.what-other-say .wrap-others-say #carousel .flex-active-slide {
+    height: 220px;
+    width: 150px !important;
+}
+
+#carousel .flex-active-slide .hidden {
+	display: block;
+}
+
+#carousel {
+	margin-bottom: 0;
+}
+
+#carousel .flex-viewport {
+	overflow-y: visible !important;
+}
+
+.hidden {
+	display: none;
+}
+
+/*==testimonial======*/
+
+.what-other-say .container {
+	padding-top: 60px;
+	padding-bottom: 70px;
+	text-align: center;
+	color: #fff;
+}
+
+.what-other-say .container .owl-carousel{
+	margin-top: 50px;
+}
+
+.article-subtitle{
+	font-size: 3rem;
+	color: #12a84e;
+}
+
+.what-other-say .container .head {
+	font-size: 3.5rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	line-height: 1.9em;
+	position: relative;
+}
+
+.what-other-say .container .head::after {
+	position: absolute;
+	content: '';
+	border: 2.5px solid #12a84e;
+	width: 90px;
+	left: 46%;
+	bottom: 0;
+}
+
+
+.what-other-say .container .customer-item {
+	width: 83%;
+	background: #000;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+.what-other-say .container .customer-item .border {
+	border: 1px solid #fff;
+	padding: 34px 65px 45px 65px;
+}
+
+.what-other-say .container .customer-item .customer-img, 
+.what-other-say .container .customer-item .rateYo{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.what-other-say .container .customer-item .rateYo {
+	margin-top: 10px;
+}
+
+.what-other-say .container .customer-item .customer-img {
+	width: 90px;
+	margin-bottom: 14px;
+}
+
+.what-other-say .container .customer-item figcaption {
+	font-size: 1.6rem;
+}
+
+.what-other-say .container .customer-item .customer-review {
+	margin-top: 1.875em;
+	font-size: 1.6rem;
+}
+
+.what-other-say .owl-theme .owl-nav {
+	position: absolute;
+	top: 45%;
+	font-size: 2.4rem;
+	color: #fff;
+	width: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.what-other-say .owl-carousel .owl-nav button.owl-prev,
+.what-other-say .owl-nav button.owl-next {
+	border: 2px solid #fff;
+	padding: 0.2rem 1.4rem !important;
+}
+
+.what-other-say .owl-carousel .owl-nav button.owl-prev:hover,
+.what-other-say .owl-nav button.owl-next:hover {
+	background: #12a84e;
+}
+
+
+
+
+
+
+
+/* HAMBURGER MENÜ */
+
+#mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+}
+
+#mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mobile-menu ul li {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#mobile-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+#bar {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#close {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #bar,
+    #close {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: none;
+    }
+}
